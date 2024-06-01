@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение кв. уравнения</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    * {
+  outline: 0 !important;
+}
+html{
+    min-height: 100%;
+}
+    body{
+        min-height: 100%;
+        background:linear-gradient(to bottom right, #95D777, #4B5BAC);
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 100px auto;
+
+
+    }
+    .header__title{
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .main{
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+    }
+    .form__text{
+        display: inline;
+    }
+    .form__input{
+        width: 40px;
+        height: 20px;
+    }
+    .form__submit{
+        border:0;
+        display: block;
+        margin: 20px auto;
+        padding-left: -50%;
+        font-family: "Montserrat Alternates", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: #fff;
+        background-color: #000;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 100px;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__title">
+                Решение квадратного уравнения
+            </div>
+        </header>
+        <main class="main">
+            <p class="main__text">
+                Введите коэфициенты
+            </p>
+            <form action="" method="POST" class="main__form form">
+                <input name="a" type="number" class="form__input">
+                <p class="form__text">x² +</p>
+                <input name="b" type="number" class="form__input">
+                <p class="form__text">x +</p>
+                <input name="c" type="number" class="form__input">
+                <p class="form__text"> = 0</p>
+                <button class="form__submit" type="submit">Решить</button>
+            </form>
+            <p class="main__answer">{{answer}}</p>
+        </main>
+    </div>
+
+</body>
+</html>
